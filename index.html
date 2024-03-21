@@ -11,6 +11,7 @@
     <title>Study Html</title>
     <!-- 1. hiển thị tiêu đề trang web trên trình duyệt
         2. Hiển thị tiêu đề trên kết quả tìm kiếm (vd: google) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
   </head>
 
   <body>
@@ -141,5 +142,75 @@
         </p>
         <h3>Sửa đổi thêm</h3>
         <h3>Sửa đối lần 2 + thêm file</h3>
+
+        <!-- sử dụng entities -->
+        <h2>sử dụng entities để hiển thị ký tự đặc biệt</h2>
+        <p> sử dụng thẻ &lt;h1&gt;&lt;/h1&gt; để làm tiêu đề cấp 1</p>
+        <p>&copy; :biểu tượng copy right </p>
+
+        <!-- thẻ <pre>  </pre> -->
+        <pre> chúng     ta   của ngày      hôm     qua </pre>
+        <h3> học thẻ code </h3>
+        <pre>
+          <code> 
+            &lt;meta charset=&quot;UTF-8&quot; /&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+            &lt;title&gt;Study Html&lt;/title&gt;
+          </code>
+        </pre>
+      <!-- hight light code -->
+      <!-- 1. thêm link thư viện trên head, 2. thêm class="language-html, 3. thêm 2 dòng lệnh script -->
+      <h3>code sau khi hight light </h3>
+      <a href="https://prismjs.com/" target="_blank">Link thư viện PrismJS</a>
+      <pre>
+        <code class="language-html"> 
+          &lt;meta charset=&quot;UTF-8&quot; /&gt;
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+          &lt;title&gt;Study Html&lt;/title&gt;
+        </code>
+      </pre>
+
+      <!-- sử dụng thẻ table -->
+      <h3>học table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Mặt hàng</th>
+            <th colspan="2">Mô tả</th>
+          </tr>
+        </thead>
+    
+        <tbody> 
+          <tr>
+            <td rowspan="2">Áo cộc</td>
+            <td>giá</td>
+            <td>100.000vnd</td>
+          </tr>
+          <tr>
+            <td>chất liệu</td>
+            <td>vải cá sấu cao cấp</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">quần jean</td>
+            <td>giá</td>
+            <td>50.000 vnđ</td>
+          </tr>
+          <tr>
+            <td>chất liệu</td>
+            <td>bò cao cấp</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td><b>Tổng cộng</b></td>
+            <td colspan="2"><b>150.000 vnđ (chưa có VAT)</b></td>
+          </tr>
+        </tfoot>
+
+      </table>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
 </html>
